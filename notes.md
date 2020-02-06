@@ -7,3 +7,7 @@ Comando: tsc -init
 ## Criando package.json
 Comando: npm init -y
 > A função do package.json é gerenciar as informações e de dependências da aplicação.
+
+## Instalando o Live Server
+Comando: npm install -s live-server
+> 
