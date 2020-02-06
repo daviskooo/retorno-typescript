@@ -5,7 +5,7 @@ Comando: tsc -init
 > O tsconfig é um arquivo de configuração do TypeScript.
 
 ## Criando package.json
-Comando: '''npm init -y'''
+Comando: 'npm init -y'
 > A função do package.json é gerenciar as informações e de dependências da aplicação.
 
 ## Instalando o Live Server
