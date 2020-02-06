@@ -10,4 +10,4 @@ Comando: npm init -y
 
 ## Instalando o Live Server
 Comando: npm install -s live-server
->> O live-server será utilizado para usar a porta 3000 para rodar a aplicação.
+> O live-server será utilizado para usar a porta 3000 para rodar a aplicação.
