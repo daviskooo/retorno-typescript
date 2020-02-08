@@ -19,6 +19,24 @@ var enterprise;
         function Customer() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
+        Customer.prototype.getBalance = function () {
+            return this.balance;
+        };
+        Customer.prototype.setBalance = function (balance) {
+            this.balance = balance;
+        };
+        Customer.prototype.getLimit = function () {
+            return this.limit;
+        };
+        Customer.prototype.setLimit = function (limit) {
+            this.limit = limit;
+        };
+        Customer.prototype.getId = function () {
+            return this.id;
+        };
+        Customer.prototype.setId = function (id) {
+            this.id = id;
+        };
         return Customer;
     }(enterprise.People));
 })(enterprise || (enterprise = {}));
