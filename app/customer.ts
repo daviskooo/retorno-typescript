@@ -1,5 +1,5 @@
-namespace enterprise{
-    class Customer {
+namespace enterprise {
+    class Customer extends People {
         
     }
 }
