@@ -1,3 +1,4 @@
+"use strict";
 var enterprise;
 (function (enterprise) {
     var People = /** @class */ (function () {

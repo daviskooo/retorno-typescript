@@ -11,3 +11,7 @@ Comando: npm init -y
 ## Instalando o Live Server
 Comando: npm install -s live-server
 > O live-server será utilizado para usar a porta 3000 para rodar a aplicação.
+
+## Executando um arquivo .ts e transpilando para .js
+Comando: tsc -w
+> Este comando serve para chamar o comando tsc via node para que fique "escutando" as modificações da aplicação em tempo de modificação.
