@@ -12,5 +12,13 @@ namespace enterprise {
         setName(name:string):void{
             this.name = name;
         }
+
+        getAge():number|undefined{
+            return this.age;
+        }
+
+        setAge(age:number):void{
+            this.age = age;
+        }
     }
 }
