@@ -20,5 +20,5 @@ var enterprise;
             return _super !== null && _super.apply(this, arguments) || this;
         }
         return Customer;
-    }(People));
+    }(enterprise.People));
 })(enterprise || (enterprise = {}));

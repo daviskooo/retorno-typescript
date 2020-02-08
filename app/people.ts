@@ -1,5 +1,5 @@
 namespace enterprise {
-    class People {
+    export class People {
         // Criação de atributo com conceito de union types.
         private name:string|undefined;
         private cpf:string;

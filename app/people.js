@@ -24,4 +24,5 @@ var enterprise;
         };
         return People;
     }());
+    enterprise.People = People;
 })(enterprise || (enterprise = {}));
