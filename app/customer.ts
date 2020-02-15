@@ -1,8 +1,13 @@
 namespace enterprise {
-    class Customer extends People {
+    export class Customer extends People {
         private balance: number | undefined;
         private limit: number | undefined;
         private id: number | undefined;
+
+        constructor(name:string, cpf:string, id:number) {
+            super(name, cpf); // Sobrescrita de construtor.
+            this.id = id;
+        }
 
         getBalance(): number | undefined {
             return this.balance;

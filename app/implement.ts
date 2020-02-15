@@ -6,4 +6,15 @@ namespace enterprise {
     document.getElementById("name").textContent = p.getName();
     document.getElementById("cpf").textContent = p.getCpf();
     document.getElementById("age").textContent = p.getAge();
+
+    let c = new Customer("Davi", "123.123.123.12", 1);
+    c.setAge(19);
+    c.setLimit(1000);
+    c.setBalance(250);
+
+    document.getElementById("customerId").textContent = c.getId();
+    document.getElementById("limit").textContent = c.getLimit();
+    document.getElementById("balance").textContent = c.getBalance();
+    document.getElementById("customerName").textContent = c.getName();
+    document.getElementById("customerCpf").textContent = c.getCpf();
 }

@@ -16,8 +16,10 @@ var enterprise;
 (function (enterprise) {
     var Customer = /** @class */ (function (_super) {
         __extends(Customer, _super);
-        function Customer() {
-            return _super !== null && _super.apply(this, arguments) || this;
+        function Customer(name, cpf, id) {
+            var _this = _super.call(this, name, cpf) || this;
+            _this.id = id;
+            return _this;
         }
         Customer.prototype.getBalance = function () {
             return this.balance;
@@ -39,4 +41,5 @@ var enterprise;
         };
         return Customer;
     }(enterprise.People));
+    enterprise.Customer = Customer;
 })(enterprise || (enterprise = {}));
