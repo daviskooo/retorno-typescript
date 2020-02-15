@@ -19,8 +19,8 @@ namespace enterprise {
             this.dayValue = dayValue;
         }
 
-        private SalaryCalc(dayValue: number | undefined) {
-            let result = dayValue * 31;
+        SalaryCalc(): number {
+            return this.dayValue * 30;
         }
     }
 }

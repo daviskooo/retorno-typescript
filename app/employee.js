@@ -31,8 +31,8 @@ var enterprise;
         Employee.prototype.setDayValue = function (dayValue) {
             this.dayValue = dayValue;
         };
-        Employee.prototype.SalaryCalc = function (dayValue) {
-            var result = dayValue * 31;
+        Employee.prototype.SalaryCalc = function () {
+            return this.dayValue * 30;
         };
         return Employee;
     }(enterprise.People));

@@ -10,5 +10,8 @@ namespace enterprise {
             return this.sector;
         }
 
+        SalaryCalc(): number {
+            return (this.getDayValue() * 30) + (this.getDayValue() * 0.3);
+        }
     }
 }

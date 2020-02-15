@@ -25,6 +25,9 @@ var enterprise;
         Manager.prototype.getSector = function () {
             return this.sector;
         };
+        Manager.prototype.SalaryCalc = function () {
+            return (this.getDayValue() * 30) + (this.getDayValue() * 0.3);
+        };
         return Manager;
     }(enterprise.Employee));
 })(enterprise || (enterprise = {}));
