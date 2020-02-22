@@ -16,4 +16,9 @@ var enterprise;
     document.getElementById("balance").textContent = c.getBalance();
     document.getElementById("customerName").textContent = c.getName();
     document.getElementById("customerCpf").textContent = c.getCpf();
+    //  Funcionário
+    var f = new enterprise.Employee("Funcionário 1", "000.000.000-00");
+    f.setAge(20);
+    f.setIdEmployee(1);
+    f.setDayValue(100);
 })(enterprise || (enterprise = {}));
