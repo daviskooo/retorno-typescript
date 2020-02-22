@@ -19,14 +19,27 @@ namespace enterprise {
     document.getElementById("customerCpf").textContent = c.getCpf();
 
     //  Funcionário
-    let f =  new Employee("Funcionário 1", "000.000.000-00");
-    f.setAge(20);
-    f.setIdEmployee(1);
-    f.setDayValue(100);
+    let e =  new Employee("Funcionário 1", "000.000.000-00");
+    e.setAge(20);
+    e.setIdEmployee(1);
+    e.setDayValue(100);
 
-    document.getElementById("employeeId").textContent = f.getIdEmployee().toString();
-    document.getElementById("dayValue").textContent = f.getDayValue();
-    document.getElementById("salary").textContent = f.SalaryCalc();
-    document.getElementById("employeeName").textContent = f.getName();
-    document.getElementById("employeeCpf").textContent = f.getCpf();
+    document.getElementById("employeeId").textContent = e.getIdEmployee().toString();
+    document.getElementById("dayValue").textContent = e.getDayValue();
+    document.getElementById("salary").textContent = e.SalaryCalc();
+    document.getElementById("employeeName").textContent = e.getName();
+    document.getElementById("employeeCpf").textContent = e.getCpf();
+
+    let m = new Manager("Gerente 1", "001.001.001-01");
+    m.setAge(20);
+    m.setIdEmployee(2);
+    m.setDayValue(200);
+    m.setSector("Financial");
+
+    document.getElementById("managerId").textContent = m.getIdEmployee().toString();
+    document.getElementById("dayValue").textContent = m.getDayValue();
+    document.getElementById("salaryManager").textContent = m.SalaryCalc();
+    document.getElementById("managerName").textContent = m.getName();
+    document.getElementById("managerCpf").textContent = m.getCpf();
+    document.getElementById("sector").textContent = m.getSector();
 }

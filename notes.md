@@ -14,4 +14,4 @@ Comando: npm install -s live-server
 
 ## Executando um arquivo .ts e transpilando para .js
 Comando: tsc -w
-> Este comando serve para chamar o comando tsc via node para que fique "escutando" as modificações da aplicação em tempo de modificação.
+> Este comando serve para chamar o comando **tsc** via node para que fique "escutando" as modificações da aplicação em tempo de modificação.

@@ -1,5 +1,5 @@
 namespace enterprise {
-    class Manager extends Employee {
+    export class Manager extends Employee {
         private sector: string | undefined;
 
         setSector(sector: string | undefined): void {

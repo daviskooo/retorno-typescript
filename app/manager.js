@@ -30,4 +30,5 @@ var enterprise;
         };
         return Manager;
     }(enterprise.Employee));
+    enterprise.Manager = Manager;
 })(enterprise || (enterprise = {}));
