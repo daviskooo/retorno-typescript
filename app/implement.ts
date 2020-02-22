@@ -23,4 +23,10 @@ namespace enterprise {
     f.setAge(20);
     f.setIdEmployee(1);
     f.setDayValue(100);
+
+    document.getElementById("employeeId").textContent = f.getIdEmployee().toString();
+    document.getElementById("dayValue").textContent = f.getDayValue();
+    document.getElementById("salary").textContent = f.SalaryCalc();
+    document.getElementById("employeeName").textContent = f.getName();
+    document.getElementById("employeeCpf").textContent = f.getCpf();
 }
