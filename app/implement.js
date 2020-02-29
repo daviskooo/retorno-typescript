@@ -50,7 +50,10 @@ var enterprise;
     document.getElementById("enterpriseActivity").textContent = en.getActivity();
     var enterpriseEmployee = document.getElementById("enterpriseEmployee");
     en.getEmployee().forEach(function (e) {
-        var create = "<h6>Nome:</h6><p>" + e.getName() + "</p>";
+        var name = e.getName();
+        if (e instanceof enterprise.Manager)
+            name += "- Gerente";
+        var create = "<h6>Nome:</h6><p>" + name + "</p>";
         enterpriseEmployee.innerHTML += create;
     });
 })(enterprise || (enterprise = {}));

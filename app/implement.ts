@@ -59,7 +59,9 @@ namespace enterprise {
 
     let enterpriseEmployee = document.getElementById("enterpriseEmployee");
     en.getEmployee().forEach(e => {
-        let create = "<h6>Nome:</h6><p>"+ e.getName() +"</p>";
+        let name = e.getName();
+        if(e instanceof Manager) name += "- Gerente";
+        let create = "<h6>Nome:</h6><p>"+ name +"</p>";
         enterpriseEmployee.innerHTML += create;
     });
 }
