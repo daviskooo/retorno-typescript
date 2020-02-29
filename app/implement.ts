@@ -42,4 +42,14 @@ namespace enterprise {
     document.getElementById("managerName").textContent = m.getName();
     document.getElementById("managerCpf").textContent = m.getCpf();
     document.getElementById("sector").textContent = m.getSector();
+
+    // Enterprise
+
+    let en = new Entreprise();
+    en.setName("Mercúrio");
+    en.setCity("São Paulo");
+    en.setActivity("T.I");
+    en.addCustomer(c);
+    en.addEmployee(e);
+    en.addEmployee(m);
 }

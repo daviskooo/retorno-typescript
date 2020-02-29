@@ -1,9 +1,9 @@
 namespace enterprise {
-    class Entreprise {
+    export class Entreprise {
         private enterpriseName: string;
         private activity: string;
         private city: string;
-        private customers: Array<Cus> = [];
+        private customers: Array<Customer> = [];
         private employees: Array<Employee> = [];
 
         getName():string {
