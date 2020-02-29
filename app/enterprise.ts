@@ -1,6 +1,6 @@
 namespace enterprise {
     export class Entreprise {
-        private enterpriseName: string;
+        private enterpriseName: string | undefined;
         private activity: string;
         private city: string;
         private customers: Array<Customer> = [];

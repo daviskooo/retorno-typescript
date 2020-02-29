@@ -52,4 +52,14 @@ namespace enterprise {
     en.addCustomer(c);
     en.addEmployee(e);
     en.addEmployee(m);
+
+    document.getElementById("enterpriseName").textContent = en.getName();
+    document.getElementById("enterpriseCity").textContent = en.getCity();
+    document.getElementById("enterpriseActivity").textContent = en.getActivity();
+
+    let enterpriseEmployee = document.getElementById("enterpriseEmployee");
+    en.getEmployee().forEach(e => {
+        let create = "<h6>Nome:</h6><p>"+ e.getName() +"</p>";
+        enterpriseEmployee.innerHTML += create;
+    });
 }

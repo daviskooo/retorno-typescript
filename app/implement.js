@@ -37,4 +37,20 @@ var enterprise;
     document.getElementById("managerName").textContent = m.getName();
     document.getElementById("managerCpf").textContent = m.getCpf();
     document.getElementById("sector").textContent = m.getSector();
+    // Enterprise
+    var en = new enterprise.Entreprise();
+    en.setName("Mercúrio");
+    en.setCity("São Paulo");
+    en.setActivity("T.I");
+    en.addCustomer(c);
+    en.addEmployee(e);
+    en.addEmployee(m);
+    document.getElementById("enterpriseName").textContent = en.getName();
+    document.getElementById("enterpriseCity").textContent = en.getCity();
+    document.getElementById("enterpriseActivity").textContent = en.getActivity();
+    var enterpriseEmployee = document.getElementById("enterpriseEmployee");
+    en.getEmployee().forEach(function (e) {
+        var create = "<h6>Nome:</h6><p>" + e.getName() + "</p>";
+        enterpriseEmployee.innerHTML += create;
+    });
 })(enterprise || (enterprise = {}));
